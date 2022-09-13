@@ -65,6 +65,11 @@ const config = {
           },
         ],
       },
+      docs: {
+        sidebar: {
+          autoCollapseCategories: true,
+        },
+      },
       footer: {
         links: [
           {

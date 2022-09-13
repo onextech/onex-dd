@@ -11,13 +11,37 @@
 
 // @ts-check
 
+const kebabCase = require('lodash/kebabCase')
+
+const getSubcategoryLinkItems = ({category, subcategories}) => subcategories.map((subcategory) => ({
+  type: 'link',
+  label: subcategory,
+  href: `/docs/${kebabCase(category)}#${kebabCase(subcategory)}`
+}))
+
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
   mySidebar: [
     {
-      type: 'doc',
-      id: 'product-guide',
+      type: 'category',
       label: 'Product Guide',
+      link: {
+        type: 'doc',
+        id: 'product-guide',
+      },
+      collapsed: false,
+      items: getSubcategoryLinkItems({
+        category: 'Product Guide',
+        subcategories: [
+          'Handover Overview',
+          'Your Application Stack',
+          'Installing your source code bundle',
+          'Understanding your application code architecture',
+          'Server Migration',
+          'Data migration',
+          'Migration Checklist'
+        ]
+      }),
     },
     {
       type: 'doc',
