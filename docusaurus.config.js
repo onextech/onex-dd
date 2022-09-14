@@ -6,7 +6,7 @@ const theme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'One X Tech',
-  tagline: 'Developer Guides',
+  tagline: 'Product Guide',
   url: 'https://www.onextech.com.sg/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -61,7 +61,7 @@ const config = {
             type: 'doc',
             docId: 'product-guide',
             position: 'left',
-            label: 'Documentations',
+            label: 'Docs',
           },
         ],
       },

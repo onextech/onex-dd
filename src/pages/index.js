@@ -17,7 +17,7 @@ function Homepage() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/product-guide">
-            Documentations
+            Docs
           </Link>
         </div>
       </div>
@@ -29,8 +29,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={siteConfig.title}
-      description={`${siteConfig.title} Developer Guides`}
+      title='Docs'
+      description={`${siteConfig.title} Product Guide`}
     >
       <Homepage />
     </Layout>
