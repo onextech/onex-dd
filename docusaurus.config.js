@@ -2,6 +2,7 @@
 // Note: type annotations allow type checking and IDEs autocompletion
 
 const theme = require('prism-react-renderer/themes/dracula');
+const appConfig = require('./config.js');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -89,6 +90,12 @@ const config = {
       prism: {
         theme,
         darkTheme: theme,
+      },
+      algolia: {
+        appId: appConfig.algolia.appId,
+        apiKey: appConfig.algolia.apiKey,
+        indexName: appConfig.algolia.indexName,
+        contextualSearch: true,
       },
     }),
 };
