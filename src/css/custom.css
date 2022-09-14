@@ -74,3 +74,8 @@ html[data-theme='dark'] {
 [data-theme='dark'] .hero--primary {
   --ifm-hero-background-color: #000;
 }
+
+table {
+  width: 100%;
+  display: table;
+}
