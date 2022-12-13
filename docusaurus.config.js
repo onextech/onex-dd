@@ -1,12 +1,13 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
+const title = 'One X Tech'
 const theme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'One X Tech',
-  tagline: 'Product Guide',
+  title: `${title} Docs`,
+  tagline: `Documentation for accessing products developed by ${title}.`,
   url: 'https://www.onextech.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -15,7 +16,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'One X Tech', // Usually your GitHub org/user name.
+  organizationName: title, // Usually your GitHub org/user name.
   projectName: 'onex-dd', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -51,32 +52,28 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'One X Tech',
+        title,
         logo: {
-          alt: 'One X Tech Logo',
+          alt: `${title} Logo`,
           src: 'img/logo.png',
         },
         items: [
           // Left
           { to: 'docs/introduction', label: 'Docs', position: 'left' },
-          { to: 'docs/installation', label: 'Installation', position: 'left' },
           // Right
           {
             label: 'Resources',
             items: [
-              { label: 'One X Tech', href: 'https://onextech.com' },
+              { label: title, href: 'https://onextech.com' },
+              { label: 'NextJS', href: 'https://nextjs.org/' },
+              { label: 'Vercel', href: 'https://vercel.com/' },
+              { label: 'MUI', href: 'https://mui.com/' },
             ],
           },
-          { type: 'docsVersionDropdown', position: 'right' },
         ],
       },
-      docs: {
-        sidebar: {
-          autoCollapseCategories: true,
-        },
-      },
       footer: {
-        copyright: `Copyright ©${(new Date).getFullYear()} One X Tech`,
+        copyright: `Copyright ©${(new Date).getFullYear()} ${title}`,
       },
       prism: {
         theme,
