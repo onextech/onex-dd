@@ -7,7 +7,7 @@ const theme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'One X Tech',
   tagline: 'Product Guide',
-  url: 'https://www.onextech.com.sg/',
+  url: 'https://www.onextech.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -57,12 +57,17 @@ const config = {
           src: 'img/logo.png',
         },
         items: [
+          // Left
+          { to: 'docs/introduction', label: 'Docs', position: 'left' },
+          { to: 'docs/installation', label: 'Installation', position: 'left' },
+          // Right
           {
-            type: 'doc',
-            docId: 'product-guide',
-            position: 'left',
-            label: 'Docs',
+            label: 'Resources',
+            items: [
+              { label: 'One X Tech', href: 'https://onextech.com' },
+            ],
           },
+          { type: 'docsVersionDropdown', position: 'right' },
         ],
       },
       docs: {
@@ -71,20 +76,7 @@ const config = {
         },
       },
       footer: {
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Product Guide',
-                to: '/docs/product-guide',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © 2022 One X Tech
-
-        `,
+        copyright: `Copyright ©${(new Date).getFullYear()} One X Tech`,
       },
       prism: {
         theme,

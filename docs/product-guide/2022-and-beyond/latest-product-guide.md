@@ -1,6 +1,6 @@
-# Product Guide
+# Latest Product Guide
 
-Thank you for your supporting One X Group. We are pleased to have been able to part of your digital journey. This handover documentation aims to guide you through a smooth transition into the next chapter of your product roadmap.
+Thank you for supporting One X Tech. We are pleased to have been able to part of your digital journey. This handover documentation aims to guide you through a smooth transition into the next chapter of your product roadmap.
 
 ## Handover Overview
 
