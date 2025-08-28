@@ -6,21 +6,40 @@ import Layout from '@theme/Layout';
 
 import styles from './index.module.css';
 
-function Homepage() {
+function HeroSection() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <main className={clsx('hero hero--primary', styles.heroBanner)}>
+    <section className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
+        <h1 className={styles.heroTitle}>
+          Enterprise Software Solutions
+        </h1>
+        <p className={styles.heroSubtitle}>
+          We partner with forward-thinking companies to build scalable, high-performance applications using modern technologies like React, Node.js, and cloud infrastructure.
+        </p>
+        <div className={styles.heroButtons}>
+          <a
+            className="button button--outline button--lg"
+            href="https://www.onexgroup.co"
+            target='_blank'
+          >
+            View Our Work
+          </a>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/product-guide/introduction">
-            Read Docs
+            to="/docs/introduction">
+            Documentation
           </Link>
         </div>
       </div>
+    </section>
+  );
+}
+
+function Homepage() {
+  return (
+    <main>
+      <HeroSection />
     </main>
   );
 }

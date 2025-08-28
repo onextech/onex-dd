@@ -79,3 +79,22 @@ table {
   width: 100%;
   display: table;
 }
+
+/* Custom button overrides for hero section */
+.heroBanner .button--outline {
+  --ifm-button-background-color: transparent;
+  --ifm-button-border-color: #ffffff;
+  --ifm-button-color: #ffffff;
+}
+
+.heroBanner .button--outline:hover {
+  --ifm-button-background-color: #ffffff;
+  --ifm-button-border-color: #ffffff;
+  --ifm-button-color: #000000;
+}
+
+/* Footer copyright styling */
+.footer__copyright {
+  font-size: 0.75rem;
+  opacity: 0.6;
+}
