@@ -37,7 +37,7 @@ Comprehensive handover documentation and technical setup guides for project deli
 
 - **Installation & Setup** - Environment configuration, dependency management, and local development setup procedures.
 
-- **Deployment Platforms** - Configuration guides for modern cloud platforms including Vercel, AWS Amplify, and custom server deployments.
+- **Deployment Platforms** - Configuration guides for modern cloud platforms including Vercel, and custom server deployments.
 
 - **Database Integration** - Setup and configuration guides for Supabase, PostgreSQL, and other database solutions.
 

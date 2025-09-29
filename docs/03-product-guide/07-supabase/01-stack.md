@@ -1,4 +1,4 @@
-# Stack
+# Tech Stack
 
 ### Language & Frameworks
 | Category       | Language/Framework
@@ -11,11 +11,12 @@
 | Database       | Postgres
 | Web Server     | Vercel
 | Infrastructure | AWS
+| Mobile         | React Native
 
 ### JavaScript Libraries in Detail
 | Category     | Language/Framework 
 |--------------| --- | 
-| UI           | MUI 
+| UI           | Tailwind 
 | Framework    | NextJS 
 | Data Fetcher | React Query 
 | Forms        | React Hook Form 
@@ -24,7 +25,7 @@
 ### Infrastructure in Detail
 | Category     | Language/Framework
 | --- | --- 
-| Mail | SendGrid
-| Functions | Supabase Functions 
-| Storage | Supabase Storage
+| Mail | AWS SES/SendGrid/Resend
+| Functions | Supabase Functions / AWS Lambda 
+| Storage | Supabase Storage / AWS S3
 | Auth | Supabase Auth
